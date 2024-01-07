@@ -46,7 +46,7 @@ button:hover {
 }
 
 footer {
-    background-color: black;
+    background-color: rgb(30, 3, 3);
     color: #fff;
     position: fixed;
     bottom: 0;
