@@ -28,3 +28,25 @@ navLinks.forEach(link => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const backToTopButton = document.getElementById('back-to-top-btn');
+
+    window.addEventListener('scroll', () => {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuIcon = document.querySelector('.menu-icon');
+    const navLinks = document.querySelector('nav ul');
+
+    menuIcon.addEventListener('click', () => {
+        navLinks.style.display = navLinks.style.display === 'block' ? 'none' : 'block';
+    })
+
+})
